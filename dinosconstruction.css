@@ -123,3 +123,103 @@ min-height: 500px}
 #bottomnav a:hover {
 	color: white;}
 }
+	/* media query style rules for a tablet or high resolution mobile device */
+@media only screen and (max-width: 1024px) {
+/* style rules to remove margin and background image in the body element when not using a desktop display */
+body {
+	margin: 0;
+	background-image: none;}
+/* style rules to remove margin, padding and box-shadow in the wrapper I.D. when not using a desktop display */
+#wrapper {
+	width: auto;
+	min-width: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;}
+/* style rule for a header to have a bottom border when not using a desktop display */
+header {
+	border-bottom: 5px solid #FEF6C2;}
+/* style rules for the h1 element to remove top border, reduce size of bottom border, top and bottom padding, and font size when not using a desktop display */
+h1 {
+	margin-top: 0;
+	margin-bottom: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 2.5em;}
+/* style rules for the nav element to remove 2 column layout, display auto width, no top padding, 10 pixel margin and smaller font size */
+nav {
+	float: none;
+	width: auto;
+	padding-top: 0;
+	margin: 10px;
+	font-size: 1.3em;}
+nav li {
+	display: inline-block;} /* style rules for the nav list items to display horizontally when not using a desktop display */
+nav a {
+	padding: 1em;
+	width: 8em;
+	font-weight: bold;
+	border-style: none;}
+nav ul {
+	padding: 0;
+	margin: 0;}
+/* style rules for the image banner to remove the margin and padding when not using a desktop display */
+#complogo {
+	margin: 0;
+	padding: 0;}
+
+
+/* style rules for the main element to remove the margin and reduce text size when not using a desktop display */ 	
+main {
+	margin: 0;
+	font-size: 90%;}
+}	
+
+	/* media query style rules for a mobile device */
+@media only screen and (max-width: 768px) {
+header {
+	background-image: url(javajammini.jpg);
+	height: 128px;}  /* Dimension of javajammini.jpg (128px), creates proper display of header */
+/* style rule for the h1 element to center text remove left padding, and reduce font size for mobile devices */
+h1 {
+	font-size: 2em;
+	text-align: center;
+	padding-left: 0;}
+/* style rules for the nav elements to remove the margin, add padding, set automatic width, and add a bottom border */
+nav {
+	margin: 0;}
+nav a {
+	display: block;
+	padding: 0.2em;
+	width: auto;
+	border-bottom: 1px solid #FEF6C2;}
+nav li {
+	display: block;}
+/* style rule for the main element to add 1 pixel of padding to the top, for mobile devices */
+main {
+	padding-top: 1px;}
+/* style rule for the h2 element to add right margin, and slight top and left padding for mobile devices */
+h2 {
+	padding: 0.5em 0 0 0.5em;
+	margin-right: 0.5em;}
+/* style rule for the declaration I.D. details to remove left and right padding for mobile devices */
+.details {
+	padding-left: 0;
+	padding-right: 0;}
+	
+/* style rules to remove banner image for non high resolution mobile devices */
+#complogo {
+	background-image: none;
+	height: auto;}
+
+/* style for a class delcaration that removes 2 column layout for mobile devices */	
+.floatleft {
+	padding-left: 0.5em;
+	padding-right: 0.5em;}
+	
+/* style rule to configure a clickable hyperlink to call phone number displayed and hides desktop display of phone number */	
+#mobile {
+	display: inline;}
+#desktop {
+	display: none;}
+}
