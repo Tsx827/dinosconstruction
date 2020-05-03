@@ -136,9 +136,16 @@ div {
 }
 .column {
 	float: left;
-	width: 50%;
+	width: 50%;;
 	
 	}
+.column2 {
+	float: left;
+	width: 50%;
+	padding-top: 60px;
+	
+	}
+
 
 .row:after {
 	display: table;
@@ -150,7 +157,8 @@ div {
 /* style rules to remove margin and background image in the body element when not using a desktop display */
 body {
 	margin: 0;
-	background-image: none;}
+	background-image: none;
+	background-color: #E56B51;}
 /* style rules to remove margin, padding and box-shadow in the wrapper I.D. when not using a desktop display */
 #wrapper {
 	width: auto;
