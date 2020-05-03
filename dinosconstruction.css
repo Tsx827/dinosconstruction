@@ -87,6 +87,7 @@ div {
 	margin-left:auto;
 	margin-right:auto;}
 
+
 /* ID selector declarations: */
 
 /* style rules for the wrapper include min, max and overall width, configure background color, center alignment and creates a shadow affect */
@@ -136,16 +137,13 @@ div {
 }
 .column {
 	float: left;
-	width: 50%;;
+	width: 50%;
 	
 	}
 .column2 {
 	float: left;
 	width: 50%;
-	padding-top: 60px;
-	
-	}
-
+	padding-top: 60px;}
 
 .row:after {
 	display: table;
@@ -170,7 +168,8 @@ body {
 	border: 0;}
 /* style rule for a header to have a bottom border when not using a desktop display */
 header {
-	margin-left: 0;}
+	margin-left: 0;
+	margin-bottom: 0;}
 /* style rules for the h1 element to remove top border, reduce size of bottom border, top and bottom padding, and font size when not using a desktop display */
 h1 {
 	margin-top: 0;
@@ -206,12 +205,16 @@ main {
 	
 }	
 
-	/* media query style rules for a mobile device */
+
+
+
+															/* media query style rules for a mobile device */
 @media only screen and (max-width: 768px) {
 header {
 	background-image: url(javajammini.jpg);
 	height: 200px;
-	margin-left: 0;}  /* Dimension of javajammini.jpg (128px), creates proper display of header */
+	margin-left: 0;
+	margin-bottom: 0;}  /* Dimension of javajammini.jpg (128px), creates proper display of header */
 /* style rule for the h1 element to center text remove left padding, and reduce font size for mobile devices */
 h1 {
 	font-size: 2em;
@@ -237,24 +240,49 @@ main {
 h2 {
 	padding: 0.5em 0 0 0.5em;
 	margin-right: 0.5em;}
+	
+table {
+	display: inline-block;}
+
+	
 /* style rule for the declaration I.D. details to remove left and right padding for mobile devices */
+
+#bottomnav {
+	text-align: center;
+font-size: .65em;}
+
 .details {
 	padding-left: 0;
 	padding-right: 0;}
 	
 /* style rules to remove banner image for non high resolution mobile devices */
 	
+#mobile {
+	display: inline;}
 #desktop {
-	display: inline;}	
+	display: none;}
 
 #wrapper {
 	border: 0;
-	background-image: none;}	
+	background-image: none;
+	margin: 25px;}	
 /* style for a class delcaration that removes 2 column layout for mobile devices */	
 .floatleft {
 	padding-left: 0.5em;
 	padding-right: 0.5em;}
+.floatright {
+	padding: 0;
+	width: 100%;
+	text-align: center;}
+.column {
+	float: none;
+	width: 100%;}
+.column2 {
+	float: none;
+	width: 100%;
+	padding-top: 0;
 	
+	}
 /* style rule to configure a clickable hyperlink to call phone number displayed and hides desktop display of phone number */	
 
 }	
