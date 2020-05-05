@@ -15,7 +15,7 @@ main {
 	background-color: #E56B51;}
 /* style rules for body element, background color white, dark text and font selections */
 body {
-	background-image: url("background.jpeg");
+	background-image: url("photos/background.jpeg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-color: #050505;
@@ -32,7 +32,7 @@ header {
 /* style rules for h1 element, padding and font size increase */
 h1 {
 	font-size: 3em;
-	padding-bottom: none;
+	padding-bottom: 0;
 	padding-left: 25px;}
 h2 {
 	padding-left: 25px;}
@@ -74,16 +74,21 @@ nav ul {
 	padding-left: 0;}
 nav li {
 	padding-bottom: 10px;}
-	
-
-
+blockquote {
+	max-width: 550px;}
+table, td {
+	text-align:right;}
+textarea {
+	width: 175px;}
+input[type="text"] {
+	width: 175px;}
 
 									/* ID selector declarations: */
 
 /* style rules for the wrapper include min, max and overall width, configure background color, center alignment and creates a shadow affect */
 #wrapper {
 	background-color:#E56B51;
-	background-image: url("logo.jpg");
+	background-image: url("photos/logo.jpg");
 	background-repeat: no-repeat;
 	min-width: 900px;
 	max-width: 1280px;
@@ -93,7 +98,7 @@ nav li {
 	margin-left: auto;
 	border: 30px solid #E56B51;}	
 #complogo {
-	background-image: url("complogo.jpg");
+	background-image: url("photos/complogo.jpg");
 	background-size: 100% 100%;
 	height: 195px;}
 #bottomnav {
@@ -115,6 +120,8 @@ nav li {
 	display: none;}
 #desktop {
 	display: inline;}	
+#details {
+	display: none;}
 
 									/* Class selector declarations: */	
 .floatright {
@@ -131,6 +138,8 @@ nav li {
 	display: table;
 	content: "";
 	clear: both;}
+.tablephoto {
+	border: 1px solid black;}
 
 									/* media query style rules for a tablet or high resolution mobile device */
 @media only screen and (max-width: 1024px) {
@@ -139,15 +148,6 @@ body {
 	margin: 0;
 	background-image: none;
 	background-color: #E56B51;}
-/* style rules to remove margin, padding and box-shadow in the wrapper I.D. when not using a desktop display */
-#wrapper {
-	width: auto;
-	min-width: 0;
-	margin: 0;
-	padding: 0;
-	box-shadow: none;
-	background-image: none;
-	border: 0;}
 /* style rule for a header to have a bottom border when not using a desktop display */
 header {
 	margin-left: 0;
@@ -191,7 +191,7 @@ main {
 	padding: 0;
 	box-shadow: none;
 	background-image: none;
-	border: 0;}
+border: 0;}}
 									/* Class selector declarations: */	
 .column2 {
 	padding-top: 25px;}
@@ -236,6 +236,8 @@ table {
 td {
   display: block;
 	clear:both;}
+form td {
+float: left;}
 									/* ID selector declarations: */
 #bottomnav {
 	text-align: center;
@@ -248,12 +250,12 @@ td {
 	border: 0;
 	background-image: none;
 	margin: 25px;}	
+#flex-container {
+  display: flex;
+  flex-direction: column-reverse;}
 									/* Class selector declarations: */	
 /* style for a class delcaration that removes 2 column layout for mobile devices */	
-.floatleft {
-	padding-left: 0.5em;
-	padding-right: 0.5em;}
-.floatright {
+ .floatright {
 	padding: 0;
 	width: 100%;
 	text-align: center;}
@@ -264,7 +266,4 @@ td {
 	float: right;
 	width: 100%;
 	padding-top: 0;
-	text-align:center;}
-.flex-container {
-  display: flex;
-  flex-direction: column-reverse;}
+text-align: center;}}

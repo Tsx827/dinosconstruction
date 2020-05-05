@@ -7,6 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--configures displays for multiple device screen sizes-->
 	<link href="dinosconstruction.css" rel="stylesheet" type="text/css" /> <!--Links external style sheet javajam.css-->
+	<script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--Link to jquery CND-->  
 </head>
 
 <body>
@@ -16,24 +17,26 @@
 </header>		
 <nav>
 				<ul>
-				<li><a href="index.html">Home</a></li></br>
-				<li><a href="whatwedo.html">What We Do</a></li></br>
-				<li><a href="whatwevedone.html">What We've Done</a></li></br>
-				<li><a href="freeestimates.html">Free Estimates</a></li></br>
-				<li><a href="aboutus.html">About Us</a></li></br>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="whatwedo.html">What We Do</a></li>
+				<li><a href="whatwevedone.html">What We've Done</a></li>
+				<li><a href="freeestimates.html">Free Estimates</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
 				<li><a href="aboutme.html">About Me</a></li>
 
 			    </ul>
 </nav>
 <main>				<!-- Content Area -->
-<div class="flex-container">
+<div id="flex-container">
 	<div class="floatright">
-		<table border="1">
+		<table class="tablephoto">
 			<tr>
-			<th><img src="photos/farmer2.jpg" width="280px" alt="porch"></th>
+			<th><img src="photos/farmer2.jpg" width="280" alt="porch"></th>
 			</tr>
+			</table>
+			<table class="tablephoto">
 			<tr>
-			<th><img src="photos/farmer1.jpg" width="280px" alt="porch"></th>
+			<th><img src="photos/farmer1.jpg" width="280" alt="porch"></th>
 			</tr>
 		</table>		
 	</div>
@@ -44,9 +47,17 @@
 					<p>If you're looking for a one stop construction company for any and all remodeling needs, you've come to the right place. Dino's Construction is licensed and insured for all 
 					construction work. We provide estimates free of charge, and work with the best electricians and plumbers in the industry to give you the best service at the best price.</p>
 					<a href="https://www.bbb.org/us/nh/derry/profile/construction-services/dinos-construction-0051-92014527">Dino's Construction BBB Profile</a>
-					<blockquote>
-					A+ Rating with the Better Business Bureau. </br> 
-					<b>Customer Review:</b> "Working with Dino was a pleasure. It was amazing how quickly he gave me an estimate, and in less than 2 weeks we had a beautiful front porch to enjoy all summer."
+					<h4>A+ Rating with the Better Business Bureau.</h4> <a href="#" id="review"><b>Customer Review</b></a>
+					<script>
+					$(document).ready(function(){		<!-- Jquery function to display customer review on click-->
+						$('#review').click(function(){ 	<!-- Obtained from hands on practice 14.10 Web Development & Design Foundations P.605-->
+							$('#details').toggle();
+							});
+						});
+					</script>
+					
+					<blockquote id="details">
+					"Working with Dino was a pleasure. It was amazing how quickly he gave me an estimate, and in less than 2 weeks we had a beautiful front porch to enjoy all summer."
 					</blockquote>
 </div>					
 </div>				
@@ -61,17 +72,17 @@
 		<a href="aboutme.html">About Me</a> 
 </div>
 
-		<a href="http://www.facebook.com/pages/Dinos-Construction/185037318235441" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;"<a href="http://www.facebook.com/pages/Dinos-Construction/185037318235441" target="_TOP" title="Dino&#039;s Construction"><img src="http://badge.facebook.com/badge/185037318235441.2135.1597749929.png" style="border: 0px; padding-top: 2px;" /></a>
+		<a href="http://www.facebook.com/pages/Dinos-Construction/185037318235441" target="_TOP" style="font-family: &quot;lucida grande&quot;,tahoma,verdana,arial,sans-serif; font-size: 11px; font-variant: normal; font-style: normal; font-weight: normal; color: #3B5998; text-decoration: none;"><img src="http://badge.facebook.com/badge/185037318235441.2135.1597749929.png" alt="Facebook Icon" style="border: 0px; padding-top: 2px;"></a>
 					<!-- Contact Information -->
-		</br>	
+		<br>	
 		Dean McComish: 
 		<a id="mobile" href="tel:978-360-4179">978-360-4179</a> <!--hyperlink to place call on mobile device-->
 		<span id="desktop">978-360-4179</span><br> 
 		<a href="mailto:dinosconstruction@hotmail.com">DinosConstruction@Hotmail.com</a>
-		</br>
+		<br>
 					<!-- Copyright Footer -->
 					<!-- Facebook Badge START code obtained from facebook.com for page promotion purposes free of charge.--> 
-		Copyright &copy; 2020 Dino's Construction <br />
+		Copyright &copy; 2020 Dino's Construction <br>
 
 	
 </footer>
