@@ -253,6 +253,8 @@ float: left;}
 #flex-container {
   display: flex;
   flex-direction: column-reverse;}
+#resize img {
+	width: 280px;}
 									/* Class selector declarations: */	
 /* style for a class delcaration that removes 2 column layout for mobile devices */	
  .floatright {
