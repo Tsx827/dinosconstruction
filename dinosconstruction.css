@@ -1,6 +1,6 @@
 /* Dinos Construction */
 /* dinosconstruction.css */
-/* Last Edited May 3rd 2020 By CAnderson */
+/* Last Edited May 5th 2020 By Chris Anderson */
 
 
 
@@ -13,23 +13,23 @@ main {
 	overflow: auto;
 	min-height: 600px;
 	background-color: #E56B51;}
-/* style rules for body element, background color white, dark text and font selections */
+/* style rules for body element */
 body {
-	background-image: url("photos/background.jpeg");
+	background-image: url("photos/background.jpeg"); /* background image of plaster */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	background-color: #050505;
+	background-color: #050505; /*fallback background color if image fails to load */
 	color: #221811; 
 	font-family: Verdana,Arial,sans-serif;
 	}
-/* style rules for header element, background color red and bottom padding */
+/* style rules for header element to have a background color of red/pink bottom border and left margin */
 header {
 	display: block; /* added for improved display when using internet explorer */
 	background-color: #E56B51;
 	border-bottom: 2px solid rgb(233, 229, 230);
 	margin-left:200px;
 	margin-bottom: 5px;}
-/* style rules for h1 element, padding and font size increase */
+/* style rules for h1, h2, h3, p elements to have 25px of left padding */
 h1 {
 	font-size: 3em;
 	padding-bottom: 0;
@@ -40,7 +40,7 @@ h3 {
 	padding-left: 25px;}
 p {
 	padding-left: 25px;}
-/* style rules for footer element include center alignment, reduced text size and display italics, also displays a red color */
+/* style rules for footer element creates a top and bottom border and padding, center aligns italic bold text */
 footer {
 	display: block; /* added for improved display when using internet explorer */
 	background-color: #E56B51;
@@ -79,13 +79,13 @@ blockquote {
 table, td {
 	text-align:right;}
 textarea {
-	width: 175px;}
+	width: 175px;} /* style rule to give form a fixed matching width */
 input[type="text"] {
-	width: 175px;}
+	width: 175px;} /* style rule to give form a fixed matching width */
 
 									/* ID selector declarations: */
 
-/* style rules for the wrapper include min, max and overall width, configure background color, center alignment and creates a shadow affect */
+/* style rules for the wrapper provides red/pink background color, company logo, min/max width and margin rules */
 #wrapper {
 	background-color:#E56B51;
 	background-image: url("photos/logo.jpg");
@@ -98,18 +98,20 @@ input[type="text"] {
 	margin-left: auto;
 	border: 30px solid #E56B51;}	
 #complogo {
-	background-image: url("photos/complogo.jpg");
+	background-image: url("photos/complogo.jpg"); /* id for a company banner with 195px height */
 	background-size: 100% 100%;
 	height: 195px;}
 #bottomnav {
-	text-align: center;
+	text-align: center; /* id for bottom navigation area, for ease of browsing on all devices, more so mobile devices */
 	font-size: 1.25em; 
 	font-weight: bold;
 	text-decoration: none;
 	padding: 2px;}
+/* style rule for the id bottom nav to remove underline text */
 #bottomnav a {
 	text-decoration: none;
 	font-style: normal;}
+/* id with style rules for the nav to include pseudo classes for links, visited links and hovering over a link */
 #bottomnav a:link {
 	color: black;}
 #bottomnav a:visited {
@@ -117,14 +119,14 @@ input[type="text"] {
 #bottomnav a:hover {
 	color: white;}
 #mobile {
-	display: none;}
+	display: none;} /* hide clickable hyperlink for mobile numbers on desktops */
 #desktop {
 	display: inline;}	
 #details {
-	display: none;}
+	display: none;} /* hides details of customer review on index page */
 
 									/* Class selector declarations: */	
-.floatright {
+.floatright { /* class to used to float multiple images to the right of text */
 	float: right;
 	padding: 25px;}
 .column {
@@ -148,24 +150,24 @@ body {
 	margin: 0;
 	background-image: none;
 	background-color: #E56B51;}
-/* style rule for a header to have a bottom border when not using a desktop display */
+/* style rule for a header */
 header {
 	margin-left: 0;
 	margin-bottom: 0;}
-/* style rules for the h1 element to remove top border, reduce size of bottom border, top and bottom padding, and font size when not using a desktop display */
+/* style rules for the h1 element reduce text size and margins for mobile devices*/
 h1 {
 	margin-top: 5px;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	font-size: 2.5em;}
-/* style rules for the nav element to remove 2 column layout, display auto width, no top padding, 10 pixel margin and smaller font size */
+/* style rules for the nav element to remove 2 column layout, display auto width, 10 pixel margin and smaller font size */
 nav {
 	float: none;
 	width: auto;
 	margin: 10px;
 	font-size: 1em;}
 nav li {
-	display: inline-block; /* style rules for the nav list items to display horizontally when not using a desktop display */
+	display: inline-block; /* style rules for the nav list items to display horizontally when using a mobile device */
 	padding-bottom: 0;}
 nav a {
 	padding: 1em;
@@ -183,7 +185,7 @@ main {
 	font-size: 90%;}
 									/* ID selector declarations: */
 
-/* style rules for the wrapper include min, max and overall width, configure background color, center alignment and creates a shadow affect */
+/* style rules for the wrapper removing logo and margins/padding for mobile devices */
 #wrapper {
 	width: auto;
 	min-width: 0;
@@ -201,15 +203,14 @@ border: 0;}}
 									/* media query style rules for a mobile device */
 @media only screen and (max-width: 768px) {
 header {
-	background-image: url(javajammini.jpg);
 	height: 200px;
 	margin-left: 0;
 	margin-bottom: 0;} 
-/* style rule for the h1 element to center text remove left padding, and reduce font size for mobile devices */
+/* style rule for the h1 element for mobile devices */
 h1 {
 	font-size: 2em;
 	padding: 0;}
-/* style rules for the nav elements to remove the margin, add padding, set automatic width, and add a bottom border */
+/* style rules for the nav elements to remove the margin */
 nav {
 	margin: 0;}
 nav a {
@@ -250,14 +251,14 @@ float: left;}
 	border: 0;
 	background-image: none;
 	margin: 25px;}	
-#flex-container {
+#flex-container { 		/* id for rearranging text above photos for mobile devices */
   display: flex;
   flex-direction: column-reverse;}
 #resize img {
 	width: 280px;}
 									/* Class selector declarations: */	
 /* style for a class delcaration that removes 2 column layout for mobile devices */	
- .floatright {
+ .floatright { /* modifies the float right class to display 100% width and center align text for mobile devices */
 	padding: 0;
 	width: 100%;
 	text-align: center;}
